@@ -1,0 +1,21 @@
+<template>
+    <lightning-card title="Account Summary" icon-name="standard:account">
+
+        <template if:true={summary}>
+            <div class="slds-p-around_medium">
+                <p><strong>Name:</strong> {summary.accountName}</p>
+                <p><strong>Industry:</strong> {summary.industry}</p>
+                <p><strong>Annual Revenue:</strong> {summary.annualRevenue}</p>
+                <p><strong>Total Opportunities:</strong> {summary.totalOpportunities}</p>
+                <p><strong>Total Pipeline Amount:</strong> {summary.totalPipelineAmount}</p>
+            </div>
+        </template>
+
+        <template if:true={error}>
+            <div class="slds-text-color_error slds-p-around_medium">
+                Error loading data
+            </div>
+        </template>
+
+    </lightning-card>
+</template>

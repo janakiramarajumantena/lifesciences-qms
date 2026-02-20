@@ -1,0 +1,27 @@
+<template>
+    <lightning-card title="Deviation Dashboard">
+
+        <div class="slds-grid slds-gutters slds-p-around_medium">
+
+            <div class="slds-col">
+                <lightning-card title="Total">
+                    <h1 class="number">{stats.Total}</h1>
+                </lightning-card>
+            </div>
+
+            <div class="slds-col">
+                <lightning-card title="Open">
+                    <h1 class="number">{stats.Open}</h1>
+                </lightning-card>
+            </div>
+
+            <div class="slds-col">
+                <lightning-card title="Closed">
+                    <h1 class="number">{stats.Closed}</h1>
+                </lightning-card>
+            </div>
+
+        </div>
+
+    </lightning-card>
+</template>
